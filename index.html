@@ -8,17 +8,17 @@
 
     <link
       rel="shortcut icon"
-      href="images/favicon-32x32.png"
+      href="CSS/images/favicon-32x32.png"
       type="image/x-icon"
     />
     <link rel="stylesheet" href="CSS/normalize.css" />
     <link rel="stylesheet" href="CSS/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
+
   </head>
   <body>
     <h1 class="title">Pokémon Random, ¿Cuál te tocará?</h1>
@@ -33,7 +33,7 @@
           <img
             src="CSS/images/image-victor.jpg"
             alt="image portrait"
-            class="card-body-portrait"
+            id="card-body-portrait"
           />
           <h2 class="card-body-title">
             card name
@@ -51,11 +51,15 @@
             <p>prueba</p>
           </div>
           <div class="card-footer-opcion3">
-             <h3>Opcion 1</h3>
+            <h3>Opcion 1</h3>
             <p>prueba</p>
-          </div>
+          </div>          
+        </div>
+        <div class="boton">
+          <button id="boton-random">Select</button>
         </div>
       </article>
-    </main>
+    </main>    
   </body>
+  <script src="JAVASCRIPT/script.js"></script>
 </html>

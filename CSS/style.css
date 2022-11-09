@@ -17,11 +17,13 @@ html {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   font-family: "Kumbh Sans", sans-serif;
-  background: url(../CSS/images/bg-pattern-bottom.svg), url(../CSS/images/bg-pattern-top.svg);
   background-color: var(--dark-cyan);
+  background-image: url(../CSS/images/bg-pattern-bottom.svg), url(../CSS/images/bg-pattern-top.svg);
   background-repeat: no-repeat, no-repeat;
-  background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+  background-position: right 50vw bottom -18vh, left 47vw top 36vh;
 }
 
 h1 {
@@ -29,13 +31,15 @@ h1 {
   justify-content: center;
   margin-top: 10%;
   margin-bottom: 10%;
+  font-size: 4rem;
+  color: red;
 }
 
 .flex {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 30vh;
+  height: 23vh;
 }
 
 .card {
@@ -43,10 +47,11 @@ h1 {
   width: 326px;
   border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.7);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 .card-header {
   width: 100%;
+  display: block;
 }
 .card-body {
   display: flex;
@@ -61,10 +66,12 @@ h1 {
   background-color: white;
 }
 .card-body-title {
+  margin-top: 2rem;
   font-size: 1.8rem;
 }
 .card-body-title span {
   color: var(--dark-gray);
+  font-weight: 400;
 }
 .card-footer {
   display: flex;
@@ -72,4 +79,13 @@ h1 {
 }
 .card-footer p {
   letter-spacing: 1px;
+}
+
+.boton {
+  display: flex;
+  justify-content: center;
+}
+.boton #boton-random {
+  background-color: red;
+  margin: 10px 10px 10px 10px;
 }/*# sourceMappingURL=style.css.map */
