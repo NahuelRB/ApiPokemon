@@ -22,44 +22,46 @@
   </head>
   <body>
     <h1 class="title">Pokémon Random, ¿Cuál te tocará?</h1>
-    <main class="flex">
-      <article class="card">
-        <img
-          src="CSS/images/bg-pattern-card.svg"
-          alt="imagen header card"
-          class="card-header"
-        />
-        <div class="card-body">
+    <main class="flex"></main>   
+      <template class="template-card">
+        <p class="p"></p>
+        <article class="card">
           <img
-            src="CSS/images/image-victor.jpg"
-            alt="image portrait"
-            id="card-body-portrait"
+            src="CSS/images/bg-pattern-card.svg"
+            alt="imagen header card"
+            class="card-header"
           />
-          <h2 class="card-body-title">
-            card name
-            <span>26</span>
-          </h2>
-          <p class="card-body-text">otras cosas</p>
-        </div>
-        <div class="card-footer">
-          <div class="card-footer-opcion1">
-            <h3>Opcion 1</h3>
-            <p>prueba</p>
+          <div class="card-body">
+            <img
+              src="CSS/images/image-victor.jpg"
+              alt="image portrait"
+              class="card-body-portrait"
+            />
+            <h2 class="card-body-title">
+              card name
+              <span>HP</span>
+            </h2>
+            <p class="card-body-text">Experience</p>
           </div>
-          <div class="card-footer-opcion2">
-            <h3>Opcion 1</h3>
-            <p>prueba</p>
+          <div class="card-footer">
+            <div class="card-footer-statistics">
+              <h3>Opcion 1</h3>
+              <p>Ataque</p>
+            </div>
+            <div class="card-footer-statistics">
+              <h3>Opcion 1</h3>
+              <p>Defensa</p>
+            </div>
+            <div class="card-footer-statistics">
+              <h3>Opcion 1</h3>
+              <p>Speed</p>
+            </div>          
           </div>
-          <div class="card-footer-opcion3">
-            <h3>Opcion 1</h3>
-            <p>prueba</p>
-          </div>          
-        </div>
-        <div class="boton">
-          <button id="boton-random">Select</button>
-        </div>
-      </article>
-    </main>    
+          <div class="boton">
+            <button onclick="pokemonRandom()">Select</button>
+          </div>
+        </article>
+      </template>   
   </body>
   <script src="JAVASCRIPT/script.js"></script>
 </html>
